@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Form</title>
+</head>
+<body>
+	<h1>Contact From</h1>
+	<p>Kindly fill the fields below</p>
+	<form action="process.php" method="post">
+	  	<p>
+			<label for="full_name">Full Name</label><br />
+			<input type="text" name="full_name" placeholder="Your full name">
+	    </p>
+	    <p>
+			<label for="email">Email</label><br />
+			<input type="email" name="email" placeholder="Email">
+	    </p>
+	    <p>
+			<label for="gender">Gender</label><br />
+			<input type="radio" name="gender" value="female" /> Female 
+            <input type="radio" name="gender" value="male" /> Male
+		</p>
+	   	<p>
+		    <label for="address">Address</label><br />
+		    <textarea name="address"></textarea>
+	  	</p>
+	    <p>
+			<label for="education">Highest Level of Education</label><br />
+			<select name="education">
+				<option selected>Choose...</option>
+				<option value="Masters">Masters</option>
+				<option value="BSc">BSc</option>
+				<option value="HND">HND</option>
+				<option value="Secondary School">Secondary School</option>
+			</select>
+	    </p>
+	  	<p>
+	    	<input type="checkbox" name="detail_use" value="yes">
+	      	<label for="detail_use">Can i use your details as i see fit?</label>
+	    </p>
+	  <button type="submit">Submit</button>
+	</form>
+
+</body>
+</html>
