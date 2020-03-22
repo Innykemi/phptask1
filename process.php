@@ -20,5 +20,5 @@ $myfile = fopen($full_name . ".txt", "w") or die("Unable to open file!");
 fwrite($myfile, $message);
 fclose($myfile);
 
-echo "Your file has been downloaded, Please check your current directory"
+echo "Your file has been created, Please check your current directory"
 ?>
